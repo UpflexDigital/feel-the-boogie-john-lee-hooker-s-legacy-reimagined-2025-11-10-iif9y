@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feel the Boogie: John Lee Hooker's Legacy Reimagined - Immerse yourself in high-fidelity audio remasters, virtual concert experiences, and iconic gear guides.">
+    <meta name="keywords" content="John Lee Hooker, blues legacy, audio remasters, virtual concerts, boogie music">
+    <meta name="author" content="John Lee Hooker Legacy">
+    <title>Feel the Boogie: John Lee Hooker's Legacy Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .button-hover:hover {
+            transform: scale(1.05);
+        }
+        
+        .button-hover:active {
+            transform: scale(0.98);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        .faq-answer.active {
+            opacity: 1;
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-bold gradient-text">
+                        <i class="fas fa-music mr-2"></i>Boogie Legacy
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">About</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500 transition-colors duration-300" aria-expanded="false">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden pb-4 space-y-2">
+                <a href="#features" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">FAQ</a>
+                <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-20 pb-20">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 107, 0.5) 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                    Feel the <span class="gradient-text">Boogie</span>: John Lee Hooker's Legacy Reimagined
+                </h1>
+                
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+                    Immerse yourself in the primal power and captivating story of blues legend John Lee Hooker. Experience his iconic music like never before with cutting-edge audio technology and innovative virtual experiences.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                        Explore the Collection
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="#features" class="button-hover inline-flex items-center px-8 py-4 bg-gray-800 text-white font-bold rounded-full border-2 border-gray-700 hover:border-amber-500 hover:bg-gray-700 transition-all duration-300">
+                        Learn More
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Hero Stats -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 pt-12 border-t border-gray-700">
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">4K+</div>
+                        <p class="text-gray-400 font-medium">Hours of Content</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">24/7</div>
+                        <p class="text-gray-400 font-medium">Virtual Access</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">100%</div>
+                        <p class="text-gray-400 font-medium">Pure Authenticity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    Revolutionary <span class="gradient-text">Features</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">
+                    Discover the cutting-edge technology and innovative experiences that bring John Lee Hooker's legacy to life in ways you've never imagined.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: High-Fidelity Audio Remasters -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">High-Fidelity Audio Remasters</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Experience John Lee Hooker's legendary recordings in stunning clarity. Our expert audio engineers have meticulously remastered every track using the latest digital restoration technology, preserving the raw emotion and authenticity of the original performances while enhancing audio quality to studio-standard specifications.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Studio-quality 192kHz/24-bit resolution
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Noise reduction without quality loss
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Multi-channel immersive audio options
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Virtual Concert Experiences -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Virtual Concert Experiences</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Step into immersive 360-degree virtual concert environments and experience John Lee Hooker performing in legendary venues. Our advanced VR technology recreates iconic performances from different eras, allowing you to witness the blues master in action from intimate club settings to grand stages.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            360-degree immersive environments
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Performances from iconic venues
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Compatible with all VR platforms
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Gear & Tone Guides -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Gear & Tone Guides</h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Master the legendary tone and style of John Lee Hooker with our comprehensive gear and tone guides. Learn about the specific equipment he used, amplifier settings, guitar techniques, and production methods that created his distinctive sound. Perfect for musicians and enthusiasts alike.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Detailed equipment specifications
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Step-by-step playing techniques
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Audio examples and demonstrations
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full filter blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange-500/10 rounded-full filter blur-3xl -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    Transformative <span class="gradient-text">Benefits</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">
+                    Unlock a deeper connection to the blues and experience the profound impact of John Lee Hooker's music in entirely new ways.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1: Unprecedented Clarity -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Experience Unprecedented Clarity</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Hear every note, every vibration, and every emotion in John Lee Hooker's performances with crystal-clear audio quality. Our remastering process reveals details that have been hidden for decades, bringing you closer to the artist's original intent and the raw power of his blues mastery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Attend Virtual Performances -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Attend Virtual Performances</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Immerse yourself in iconic performances from legendary venues around the world. Step into the shoes of an audience member at legendary clubs and concert halls, experiencing the energy, atmosphere, and raw emotion of John Lee Hooker's live performances across different eras of his career.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Replicate Iconic Sounds -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Replicate Iconic Sounds</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Learn the secrets behind John Lee Hooker's distinctive tone and playing style. With our comprehensive guides, you'll understand the equipment, techniques, and creative choices that made his sound legendary, empowering you to incorporate these elements into your own musical journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Benefits -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Preserve Musical Heritage</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Support the preservation and celebration of blues music history. Every experience you engage with contributes to the ongoing documentation and appreciation of John Lee Hooker's monumental contributions to American music and culture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Benefit 2 -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Connect with a Global Community</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Join thousands of blues enthusiasts and musicians worldwide who share your passion for John Lee Hooker's legacy. Share experiences, exchange knowledge, and build meaningful connections with people who appreciate the transformative power of authentic blues music.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Benefit 3 -->
+                <div class="card-hover group">
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 h-full hover:border-amber-500/50 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="mb-6">
+                                <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3">Unlock Creative Inspiration</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Draw inspiration from one of blues music's greatest innovators. Whether you're a musician, producer, or creative professional, John Lee Hooker's artistic approach and pioneering spirit will fuel your own creative endeavors and artistic growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=1200&h=600&fit=crop" alt="Blues Guitar Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+                Ready to Experience the <span class="gradient-text">Boogie</span>?
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Dive into John Lee Hooker's legendary collection and discover why he remains one of the most influential blues artists of all time. Premium quality, authentic experiences, and timeless music await you.
+            </p>
+            <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transition-all duration-300">
+                Explore Now
+                <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    What Our <span class="gradient-text">Community</span> Says
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">
+                    Hear from passionate blues enthusiasts and musicians who have experienced the transformative power of John Lee Hooker's legacy.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
+                                MC
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Marcus Chen</h4>
+                            <p class="text-sm text-gray-400">Professional Guitarist, Los Angeles</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "The high-fidelity audio remasters are absolutely phenomenal. I've been playing guitar for 20 years, and these recordings have given me a completely new appreciation for Hooker's technique. The clarity reveals nuances I never heard before. This is a game-changer for any serious blues musician."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
+                                SJ
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-400">Music Producer, Nashville</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I used the gear and tone guides to recreate Hooker's signature sound in my studio. The detailed specifications and audio examples made it incredibly easy to understand his approach. My production work has improved dramatically, and my clients have noticed the difference immediately."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
+                                RP
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Robert Patterson</h4>
+                            <p class="text-sm text-gray-400">Blues Enthusiast, Chicago</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "The virtual concert experiences are mind-blowing! I felt like I was actually there watching John Lee Hooker perform. The immersive 360-degree environments and the energy of the performances transported me back in time. This is the future of music appreciation."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">
+                                EW
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Emily Williams</h4>
+                            <p class="text-sm text-gray-400">Music Educator, Austin</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "As an educator, I've incorporated these resources into my music history curriculum. My students are absolutely engaged with the high-quality content and interactive experiences. John Lee Hooker's legacy has never been more accessible or inspiring to a new generation of musicians."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">
+                    Everything you need to know about John Lee Hooker's Legacy collection and our premium experiences.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-colors duration-300">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-gray-800/80 transition-colors duration-300">
+                        <h3 class="text-lg font-bold pr-4">What audio formats are supported for the high-fidelity remasters?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-300 leading-relaxed border-t border-gray-700">
+                        <p>Our high-fidelity audio remasters are available in multiple formats to suit your needs. We offer FLAC (lossless), WAV, and MP3 formats, with the premium tier including 192kHz/24-bit FLAC files for the highest possible audio quality. All formats are compatible with modern audio players, streaming services, and professional audio workstations. Whether you're using a smartphone, home audio system, or professional studio equipment, we have a format that will work perfectly for your setup.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-colors duration-300">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-gray-800/80 transition-colors duration-300">
+                        <h3 class="text-lg font-bold pr-4">Do I need special VR equipment to experience the virtual concerts?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-300 leading-relaxed border-t border-gray-700">
+                        <p>While VR headsets provide the most immersive experience, our virtual concert experiences are accessible on multiple platforms. You can enjoy the 360-degree performances on desktop computers, tablets, and smartphones. For VR users, we support all major platforms including Meta Quest, PlayStation VR, HTC Vive, and Valve Index. The content is optimized for each platform to ensure the best possible experience. You can start enjoying the content immediately with whatever device you have available, and upgrade to VR whenever you're ready.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-colors duration-300">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-gray-800/80 transition-colors duration-300">
+                        <h3 class="text-lg font-bold pr-4">Are the gear and tone guides suitable for beginners?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-300 leading-relaxed border-t border-gray-700">
+                        <p>Absolutely! Our gear and tone guides are designed for musicians of all skill levels. We start with fundamental concepts and gradually progress to advanced techniques. Each guide includes step-by-step instructions with visual demonstrations, audio examples, and equipment recommendations at various price points. Beginners will find the foundational material accessible and inspiring, while experienced musicians will appreciate the detailed technical insights and professional-level production techniques. The guides are structured to grow with your skills and knowledge.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-colors duration-300">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-gray-800/80 transition-colors duration-300">
+                        <h3 class="text-lg font-bold pr-4">How often is new content added to the collection?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-300 leading-relaxed border-t border-gray-700">
+                        <p>We continuously expand our collection with new content. Our team regularly discovers and restores previously unreleased recordings, adds newly produced virtual concert experiences, and creates fresh educational guides. Premium subscribers receive monthly updates with new material, exclusive behind-the-scenes content, and early access to special releases. You'll receive notifications about all new additions, ensuring you never miss out on exciting new content that celebrates John Lee Hooker's incredible legacy.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-colors duration-300">
+                    <button class="faq-question w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer hover:bg-gray-800/80 transition-colors duration-300">
+                        <h3 class="text-lg font-bold pr-4">What is your refund policy if I'm not satisfied?</h3>
+                        <svg class="faq-icon w-6 h-6 text-amber-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 text-gray-300 leading-relaxed border-t border-gray-700">
+                        <p>We stand behind the quality of our content with a comprehensive satisfaction guarantee. If you're not completely satisfied with your purchase within 30 days, we offer a full refund, no questions asked. We're confident that once you experience the quality of our high-fidelity remasters, immersive virtual concerts, and comprehensive educational guides, you'll love what we've created. For any concerns or issues, our customer support team is available 24/7 to assist you and ensure you have the best possible experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gradient-to-b from-gray-800 to-gray-900 relative">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 107, 0.5) 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    About <span class="gradient-text">Boogie Legacy</span>
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">
+                    Our mission is to preserve and celebrate the legendary legacy of John Lee Hooker for generations to come.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- About Paragraph 1 -->
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-10 hover:border-amber-500/50 transition-colors duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-400">Our Story</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Boogie Legacy was founded in 2020 by a collective of music historians, audio engineers, and passionate blues enthusiasts who recognized the need to preserve and celebrate John Lee Hooker's monumental contributions to American music. Frustrated by the poor audio quality of existing recordings and the lack of accessible educational resources, our founders set out to create a comprehensive platform that would honor Hooker's legacy while making his music and knowledge available to a global audience. What started as a passion project has evolved into a world-class digital archive and educational platform, featuring the most comprehensive collection of meticulously remastered recordings, immersive virtual experiences, and expert-curated educational content dedicated to this blues legend.
+                        </p>
+                    </div>
+
+                    <!-- About Paragraph 2 -->
+                    <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-10 hover:border-amber-500/50 transition-colors duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-amber-400">Our Mission & Values</h3>
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Our mission is to preserve, celebrate, and share the authentic legacy of John Lee Hooker with the world. We believe in the transformative power of music and its ability to connect people across generations and cultures. We're committed to maintaining the highest standards of audio quality, historical accuracy, and educational excellence in everything we do. We value authenticity above all else—every recording has been carefully restored using the latest technology while maintaining the integrity of the original performances. We're dedicated to making this content accessible to everyone, from casual music lovers to professional musicians and scholars. Through our work, we honor John Lee Hooker's pioneering spirit and ensure that his revolutionary contributions to blues music continue to inspire and influence artists and audiences for generations to come.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Values Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Authenticity</h4>
+                        <p class="text-gray-400">Preserving the true spirit of Hooker's music and legacy</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Innovation</h4>
+                        <p class="text-gray-400">Leveraging cutting-edge technology to enhance experiences</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Accessibility</h4>
+                        <p class="text-gray-400">Making premium content available to everyone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 107, 0.5) 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Start Your Journey Into the <span class="gradient-text">Blues</span>
+                </h2>
+                <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                    Join thousands of music lovers and explore the legendary world of John Lee Hooker today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://seelbachs.com/products/john-lee-hooker-legacy-spirits-boogie-chillen-bourbon-kentucky-straight-bourbon-collection" target="_blank" rel="noopener noreferrer" class="button-hover inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                        Get Started Now
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:technoeg2723@gmail.com" class="button-hover inline-flex items-center px-8 py-4 bg-gray-800 text-white font-bold rounded-full border-2 border-gray-700 hover:border-amber-500 hover:bg-gray-700 transition-all duration-300">
+                        Contact Us
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600">
+            Or email us directly at <a href="mailto:hello@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="bg-gray-950 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="text-2xl font-bold gradient-text mb-4">
+                        <i class="fas fa-music mr-2"></i>Boogie Legacy
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Preserving and celebrating the legendary legacy of John Lee Hooker for generations to come.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Product</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-amber-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:technoeg2723@gmail.com" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">technoeg2723@gmail.com</a>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-amber-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <p class="text-gray-400">Available 24/7 for support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Boogie Legacy. All rights reserved. Celebrating the legendary legacy of John Lee Hooker.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Privacy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Terms</a>
+                        <a href="blog.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                const otherAnswer = otherItem.querySelector('.faq-answer');
+                                const otherIcon = otherItem.querySelector('.faq-icon');
+                                if (otherAnswer) {
+                                    otherAnswer.classList.add('hidden');
+                                    otherAnswer.classList.remove('active');
+                                }
+                                if (otherIcon) {
+                                    otherIcon.classList.remove('rotate-180');
+                                }
+                            }
+                        });
+                        
+                        // Toggle current item
+                        if (answer) {
+                            answer.classList.toggle('hidden');
+                            answer.classList.toggle('active');
+                        }
+                        const icon = item.querySelector('.faq-icon');
+                        if (icon) {
+                            icon.classList.toggle('rotate-180');
+                        }
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
