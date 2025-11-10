@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our blog featuring in-depth articles about John Lee Hooker's legacy, blues history, audio technology, and iconic music performances.">
+    <meta name="keywords" content="John Lee Hooker, blues history, music blog, boogie, audio remasters, blues legacy">
+    <meta name="author" content="John Lee Hooker Legacy">
+    <title>Blog - Feel the Boogie: John Lee Hooker's Legacy Reimagined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .button-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .button-hover:hover {
+            transform: scale(1.05);
+        }
+        
+        .button-hover:active {
+            transform: scale(0.98);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        .faq-answer.active {
+            opacity: 1;
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y" class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-bold gradient-text">
+                        <i class="fas fa-music mr-2"></i>Boogie Legacy
+                    </div>
+                </a>
+                
+                <!-- Back Link -->
+                <a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="relative min-h-96 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-20 pb-20">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 107, 0.5) 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                    Our <span class="gradient-text">Blog</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
+                    Dive deep into the world of blues music, discover the stories behind John Lee Hooker's legendary performances, and explore the technology that brings his legacy to life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-24 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Purpose Card 1 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Music History</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Explore the rich history of blues music and John Lee Hooker's revolutionary contributions to American musical culture and his lasting influence on contemporary artists.
+                    </p>
+                </div>
+
+                <!-- Purpose Card 2 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Audio Technology</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Learn about cutting-edge audio restoration techniques, high-fidelity remastering processes, and the technology that brings legendary recordings to life with pristine clarity.
+                    </p>
+                </div>
+
+                <!-- Purpose Card 3 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50">
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Artist Insights</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Discover artist profiles, performance analysis, gear breakdowns, and insider knowledge about the techniques and innovations that defined John Lee Hooker's legendary career.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-900 to-gray-800 relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full filter blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-orange-500/10 rounded-full filter blur-3xl -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-16">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                    Latest <span class="gradient-text">Article</span>
+                </h2>
+                <p class="text-lg text-gray-400 font-light">
+                    Read our most recent deep-dive exploration into John Lee Hooker's musical legacy.
+                </p>
+            </div>
+
+            <!-- Featured Post Card -->
+            <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 md:p-12 hover:border-amber-500/50 mb-24">
+                <div class="flex items-center mb-6">
+                    <span class="inline-block px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-sm font-bold rounded-full">Featured</span>
+                    <span class="ml-4 text-gray-400 text-sm font-medium">
+                        <i class="fas fa-calendar mr-2"></i>November 10, 2025
+                    </span>
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    The Evolution of John Lee Hooker's Iconic Boogie Sound: A Deep Dive into Blues History
+                </h3>
+
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                    John Lee Hooker revolutionized blues music with his distinctive boogie sound, characterized by hypnotic rhythms and innovative guitar techniques. Born in Mississippi's Delta region, he migrated to Detroit in 1943, where he pioneered electric blues and recorded the iconic "Boogie Chillen." His signature style emphasized percussive, repetitive rhythms over complex melodies, influencing rock, funk, and hip-hop for decades. Though his early recordings faced audio quality limitations, modern high-fidelity remasters and virtual concert experiences now introduce his music to contemporary audiences. Hooker's enduring legacy demonstrates that authentic artistic expression, grounded in genuine emotion and technical mastery, transcends time and cultural boundaries, remaining powerfully relevant today.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                    <a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y/blog/the-evolution-of-john-lee-hooker-s-iconic-boogie-s.html" class="button-hover inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                        Read Full Article
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <div class="flex items-center space-x-6 text-gray-400">
+                        <span class="flex items-center text-sm">
+                            <i class="fas fa-clock mr-2"></i>12 min read
+                        </span>
+                        <span class="flex items-center text-sm">
+                            <i class="fas fa-user mr-2"></i>Boogie Legacy Team
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid Heading -->
+            <div class="mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+                    More <span class="gradient-text">Stories</span>
+                </h2>
+                <p class="text-lg text-gray-400 font-light">
+                    Explore additional articles about blues history, music technology, and John Lee Hooker's enduring influence.
+                </p>
+            </div>
+
+            <!-- Blog Grid - Placeholder for Future Posts -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Card 1 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-full h-48 bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg mb-6 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="h-4 bg-gray-700 rounded mb-4 w-3/4"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-3 w-full"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-6 w-5/6"></div>
+                        <div class="h-10 bg-gray-700 rounded w-32"></div>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 2 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-full h-48 bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg mb-6 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="h-4 bg-gray-700 rounded mb-4 w-3/4"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-3 w-full"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-6 w-5/6"></div>
+                        <div class="h-10 bg-gray-700 rounded w-32"></div>
+                    </div>
+                </div>
+
+                <!-- Placeholder Card 3 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/0 to-amber-500/0 group-hover:from-amber-500/5 group-hover:to-amber-500/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                        <div class="w-full h-48 bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg mb-6 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="h-4 bg-gray-700 rounded mb-4 w-3/4"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-3 w-full"></div>
+                        <div class="h-3 bg-gray-700 rounded mb-6 w-5/6"></div>
+                        <div class="h-10 bg-gray-700 rounded w-32"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coming Soon Notice -->
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-amber-500/50 transition-colors duration-300">
+                    <svg class="w-12 h-12 text-amber-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">More Articles Coming Soon</h3>
+                    <p class="text-gray-400 mb-6">
+                        We're continuously expanding our blog with new stories, insights, and deep dives into John Lee Hooker's legendary legacy and the world of blues music.
+                    </p>
+                    <a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#contact" class="button-hover inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                        Subscribe for Updates
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=1200&h=600&fit=crop" alt="Blues Guitar Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-gray-900"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+                Explore the <span class="gradient-text">Full Collection</span>
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Experience John Lee Hooker's legendary music, virtual concerts, and comprehensive educational resources all in one place.
+            </p>
+            <a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y" class="button-hover inline-flex items-center px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-2xl transition-all duration-300">
+                Return to Main Site
+                <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="text-2xl font-bold gradient-text mb-4">
+                        <i class="fas fa-music mr-2"></i>Boogie Legacy
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Preserving and celebrating the legendary legacy of John Lee Hooker for generations to come.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-400 hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Product -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Product</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#features" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Features</a></li>
+                        <li><a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#benefits" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#testimonials" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#faq" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://UpflexDigital.github.io/feel-the-boogie-john-lee-hooker-s-legacy-reimagined-2025-11-10-iif9y#about" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-amber-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:technoeg2723@gmail.com" class="text-gray-400 hover:text-amber-400 transition-colors duration-300">technoeg2723@gmail.com</a>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-5 h-5 text-amber-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <p class="text-gray-400">Available 24/7 for support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2025 Boogie Legacy. All rights reserved. Celebrating the legendary legacy of John Lee Hooker.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Privacy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Terms</a>
+                        <a href="blog.html" class="text-gray-500 hover:text-gray-400 text-sm transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
